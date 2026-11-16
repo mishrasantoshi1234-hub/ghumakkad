@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #FFFDF9;
+    color: #292524;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom delicate Indian Mandala / Jali pattern background */
+.bg-mandala {
+  background-color: #FFFDF9;
+  background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#064e3b 0.75px, #FFFDF9 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.04;
+}
+
+.bg-mandala-dark {
+  background-color: #042f2e;
+  background-image: radial-gradient(rgba(217, 119, 6, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle Indian Royal Gold Shimmer */
+.gold-shimmer {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #d97706 100%);
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #d97706, #fbbf24, #d97706) 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf7ee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4a373;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b07d4b;
+}
+
+/* Print specific styles for itinerary export */
+@media print {
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

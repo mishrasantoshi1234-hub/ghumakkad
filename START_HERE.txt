@@ -1,0 +1,15 @@
+GHUMAKKAD — START HERE
+
+I have updated your existing project rather than replacing its design.
+
+Included:
+- Your existing website
+- A working server-side AI chat function
+- A working server-side AI itinerary function
+- Netlify routing for both AI functions
+- Safer API-key handling
+
+IMPORTANT:
+The code is prepared, but the live website cannot be published from this chat because it requires access to your own Netlify and Google AI accounts. Do not send passwords or API keys here.
+
+To publish, follow README.md. You (or a trusted adult/teacher helping with the accounts) will need to connect the project repository to Netlify and add GEMINI_API_KEY as a Netlify environment variable.

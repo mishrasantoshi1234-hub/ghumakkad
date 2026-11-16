@@ -1,0 +1,6 @@
+{
+  "name": "GHUMAKKAD – Your Intelligent Travel Companion",
+  "description": "AI-based smart Indian tourism guide offering destination recommendations, day-wise itineraries, cultural heritage, regional cuisine discovery, and essential travel advisory for India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
